@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./dashboard.css";
+import "./Dashboard.css";
 import Navbar from "../Navbar.jsx";
 import Footer from "../Footer.jsx";
 
