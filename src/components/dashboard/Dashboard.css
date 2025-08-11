@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: "Fira Code", monospace;
+  background: #0d1b2a;
+  color: #e0e1dd;
+  overflow: visible;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#dashboard {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  gap: 1rem;
+}
+
+.dashboard-left,
+.dashboard-right {
+  width: 20%;
+  /* background: rgba(27, 38, 59, 0.8); */
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #415a7744;
+  box-shadow: 0 0 10px #415a7733;
+  backdrop-filter: blur(5px);
+  background-color: #07080869 !important;
+}
+
+.dashboard-main {
+  width: 60%;
+  background: #07080869;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #415a7744;
+  box-shadow: 0 0 12px #415a7733;
+  backdrop-filter: blur(5px);
+}
+
+h2,
+h3 {
+  color: #e0e1dd;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 6px #778da970;
+}
+
+.repo-card {
+  background: rgba(27, 38, 59, 0.9);
+  border: 1px solid #e0e1ddac !important;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease-in-out;
+  color: #e0e1dd !important;
+  height: 120px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+.repo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 8px 2px #d6d7d93b !important;
+  border-color: #415a77;
+}
+
+.repo-card h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #e0e1dd !important;
+  flex-shrink: 0;
+}
+
+.repo-card p {
+  margin: 0.4rem 0 0;
+  color: #b8c2d9;
+  font-size: 0.95rem;
+  word-break: break-word;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1 1 auto;
+  max-height: 2.9em;
+  line-height: 1.3em;
+  scrollbar-width: none; /* Firefox */
+}
+
+.repo-card p::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.search-box {
+  margin-bottom: 1.5rem;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #415a7744;
+  border-radius: 6px;
+  background: #1b263b;
+  color: #e0e1dd;
+  outline: none;
+  box-shadow: 0 0 6px #415a7722;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-box input:focus {
+  border-color: #778da9;
+  box-shadow: 0 0 8px #778da966;
+}
+
+ul {
+  padding-left: 1rem;
+  list-style-type: disc;
+  color: #e0e1dd;
+}
+
+ul li p {
+  margin: 0.4rem 0;
+  color: #b8c2d9;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1100px) {
+  #dashboard {
+    flex-direction: column;
+  }
+  .dashboard-left,
+  .dashboard-right,
+  .dashboard-main {
+    width: 100%;
+  }
+}

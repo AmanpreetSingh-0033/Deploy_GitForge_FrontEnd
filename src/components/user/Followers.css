@@ -1,0 +1,162 @@
+.followers-container {
+  background: #0d1b2a;
+  min-height: 100vh;
+  padding: 40px 16px 24px 16px;
+  color: #e0e1dd;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.go-back-button {
+  align-self: flex-start;
+  margin-bottom: 18px;
+}
+.go-back-pill {
+  display: flex;
+  align-items: center;
+  background: rgba(27, 38, 59, 0.8);
+  border: 2px solid #415a77;
+  color: #e0e1dd;
+  font-weight: bold;
+  font-family: "Courier New", monospace;
+  border-radius: 30px;
+  padding: 8px 22px 8px 16px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(65, 90, 119, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+.go-back-pill .arrow {
+  font-size: 1.4em;
+  margin-right: 8px;
+}
+.go-back-pill:hover,
+.go-back-pill:focus {
+  background: #415a77;
+  color: #e0e1dd;
+  transform: scale(1.04);
+  border-color: #778da9;
+}
+
+.followers-title {
+  margin: 0 0 32px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #e0e1dd;
+  text-align: center;
+}
+
+.followers-loading {
+  margin-top: 40px;
+  text-align: center;
+  color: #b8c2d9;
+}
+
+.followers-empty {
+  color: #778da9;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.followers-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  margin-top: 8px;
+  max-width: 1100px;
+}
+
+.follower-card {
+  background: #1b263b;
+  border: 1px solid #415a77;
+  border-radius: 16px;
+  box-shadow: 0 2px 14px rgba(65, 90, 119, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 26px 18px 22px 18px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.follower-card:hover {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 6px 24px rgba(119, 141, 169, 0.2);
+  border-color: #778da9;
+}
+
+.follower-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2.5px solid #415a77;
+  margin-bottom: 16px;
+  background: #0d1b2a;
+  transition: all 0.2s ease;
+}
+
+.follower-card:hover .follower-avatar {
+  border-color: #778da9;
+}
+
+.follower-info {
+  width: 100%;
+  text-align: center;
+}
+
+.follower-username {
+  font-size: 1.18rem;
+  font-weight: bold;
+  color: #e0e1dd;
+  margin-bottom: 7px;
+}
+
+.follower-counts {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 13px;
+  color: #b8c2d9;
+  font-size: 0.98rem;
+}
+
+.view-profile-btn {
+  background: #415a77 !important;
+  color: #e0e1dd !important;
+  border-radius: 7px !important;
+  font-family: "Courier New", monospace !important;
+  font-weight: bold !important;
+  margin-top: 5px;
+  padding: 7px 18px !important;
+  box-shadow: 0 2px 8px rgba(65, 90, 119, 0.1) !important;
+  transition: all 0.2s ease !important;
+  border: 1px solid #415a77 !important;
+}
+.view-profile-btn:hover {
+  background: #344e6c !important;
+  border-color: #778da9 !important;
+  transform: scale(1.04);
+}
+
+@media (max-width: 700px) {
+  .followers-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .followers-container {
+    padding: 18px 2vw 18px 2vw;
+  }
+  .follower-card {
+    padding: 18px 8px 18px 8px;
+  }
+  .followers-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}

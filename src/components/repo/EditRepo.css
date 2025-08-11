@@ -1,0 +1,181 @@
+/* Main wrapper for the edit repo page */
+.edit-repo-main-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #000000;
+  padding: 20px 0;
+}
+
+/* Content container */
+.edit-repo-content {
+  background: #0d1b2a;
+  border-radius: 18px;
+  box-shadow: 0 0 14px #415a7740;
+  margin: 40px 0 0 0;
+  padding: 50px 40px;
+  width: 44rem;
+  max-width: 44rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 1px solid #415a77;
+}
+
+/* Title */
+.edit-repo-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e0e1dd;
+  margin-bottom: 32px;
+  text-shadow: 0 0 12px #778da955;
+  text-align: center;
+}
+
+/* Form styling */
+.edit-repo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.edit-repo-label {
+  font-size: 1.08rem;
+  color: #b8c2d9;
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 3px;
+  letter-spacing: 0.5px;
+}
+
+.edit-repo-input,
+.edit-repo-textarea {
+  background: #1b263b;
+  color: #e0e1dd;
+  border: 1px solid #415a77;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  outline: none;
+  box-shadow: 0 0 8px #415a7733;
+  transition: all 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.edit-repo-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.edit-repo-input:focus,
+.edit-repo-textarea:focus {
+  border-color: #778da9;
+  box-shadow: 0 0 0 2px #415a77, 0 0 15px #778da955;
+}
+
+/* Content row (textarea + remove button) */
+.edit-repo-content-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.edit-repo-add-content-btn {
+  background: #778da9;
+  color: #0d1b2a;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px #415a7755;
+  transition: all 0.2s ease;
+}
+
+.edit-repo-add-content-btn:hover {
+  background: #e0e1dd;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px #415a7777;
+}
+
+.edit-repo-remove-content-btn {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-left: 4px;
+  box-shadow: 0 2px 8px rgba(230, 57, 70, 0.2);
+  transition: all 0.2s ease;
+}
+
+.edit-repo-remove-content-btn:hover {
+  background: #d32f2f;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
+}
+
+.edit-repo-submit-btn {
+  background-color: #778da9;
+  color: #0d1b2a;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  box-shadow: 0 2px 8px #415a7755;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.edit-repo-submit-btn:hover {
+  background: #e0e1dd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px #415a7777;
+}
+
+.edit-repo-submit-btn:disabled {
+  background-color: #415a77;
+  color: #778da9;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+@media (max-width: 700px) {
+  .edit-repo-content {
+    padding: 30px 20px;
+    margin: 20px 15px 0;
+    max-width: 90%;
+  }
+
+  .edit-repo-title {
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+  }
+
+  .edit-repo-input,
+  .edit-repo-textarea {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+
+  .edit-repo-submit-btn {
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}

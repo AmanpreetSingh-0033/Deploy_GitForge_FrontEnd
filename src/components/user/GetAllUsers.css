@@ -1,0 +1,94 @@
+/* src/components/GetAllUsers.css */
+
+.users-container {
+  padding: 2rem;
+  color: #778da9;
+  font-family: "Share Tech Mono", monospace;
+  background-color: #0a0a0a;
+  border-top: 1px solid #ffffff50;
+  margin-top: 2rem;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  max-height: 24rem;
+}
+
+.users-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #778da9;
+  text-shadow: 0 0 5px #778da9;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* At most 7 users per row */
+  gap: 1.5rem;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* Hide scrollbar but allow scrolling */
+.users-grid::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.user-card {
+  background-color: #111;
+  border: 1px solid #778da9;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px #778da9;
+  transition: transform 0.3s ease;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+}
+
+.user-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #778da9;
+  margin-bottom: 0.8rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-name {
+  font-size: 1.2rem;
+  color: #e0e1dd;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  text-shadow: 0 0 5px #778da9;
+}
+
+.view-profile-button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 6px 12px;
+  background-color: transparent;
+  border: 1px solid #778da9;
+  color: #778da9;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.view-profile-button:hover {
+  background-color: #778da9;
+  color: #000;
+  text-shadow: none;
+}

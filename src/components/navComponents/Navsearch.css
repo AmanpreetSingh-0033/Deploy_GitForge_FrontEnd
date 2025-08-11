@@ -1,0 +1,214 @@
+body {
+  background: #0d1b2a;
+}
+
+.navsearch-main {
+  max-width: 1200px;
+  margin: 38px auto 0 auto;
+  padding: 32px 0 60px 0;
+  min-height: 80vh;
+  background: #0000005c;
+  border-radius: 25px;
+}
+
+.navsearch-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #778da9;
+  margin-bottom: 32px;
+  text-align: center;
+  text-shadow: 0 0 10px #778da980;
+  letter-spacing: 1.5px;
+}
+
+.navsearch-query {
+  color: #e0e1dd;
+  text-shadow: 0 0 8px #e0e1dd88;
+}
+
+.navsearch-columns {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: flex-start;
+  max-height: 40rem;
+  overflow-y: scroll;
+}
+
+.navsearch-repo-col {
+  flex: 1.25;
+}
+
+.navsearch-user-col {
+  flex: 1;
+}
+
+.navsearch-column {
+  background: rgba(27, 38, 59, 0.8);
+  border-radius: 18px;
+  box-shadow: 0 0 24px #415a7755, 0 0 0 4px #1b263b;
+  padding: 28px 24px 32px 24px;
+  min-width: 320px;
+  max-width: 500px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 1px solid #415a77;
+  max-height: 50rem;
+  overflow-y: scroll;
+}
+
+.navsearch-section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #e0e1dd;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px #778da980;
+}
+
+.navsearch-loading,
+.navsearch-error {
+  color: #e63946;
+  font-size: 1.13rem;
+  margin: 18px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.navsearch-repo-card {
+  background: #14141470;
+  border: 1px solid #415a77;
+  border-radius: 13px;
+  box-shadow: 0 0 18px #415a7722;
+  padding: 1.1rem 1.5rem 1rem 1.5rem;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.navsearch-repo-card:hover {
+  box-shadow: 0 0 24px #778da955, 0 0 0 2px #2a3a54;
+  border: 1px solid #778da9;
+  transform: translateY(-2px);
+}
+
+.navsearch-repo-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.navsearch-repo-name {
+  font-size: 1.14rem;
+  font-weight: 700;
+  color: #e0e1dd;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 6px #778da970;
+}
+
+.navsearch-repo-meta {
+  font-size: 0.97rem;
+  color: #b8c2d9;
+  margin-bottom: 2px;
+}
+
+.navsearch-repo-owner-label {
+  color: #a2b1c4;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.navsearch-repo-owner {
+  color: #778da9;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.navsearch-repo-description {
+  color: #e0e1dd;
+  background: #1b263b;
+  border: 1px solid #415a77;
+  border-radius: 7px;
+  padding: 0.7rem 1rem;
+  font-size: 1.01rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.navsearch-user-card {
+  background: #14141470;
+  border: 1px solid #415a77;
+  border-radius: 13px;
+  box-shadow: 0 0 18px #415a7722;
+  padding: 1.1rem 1.5rem 1rem 1.5rem;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.navsearch-user-card:hover {
+  box-shadow: 0 0 24px #778da955, 0 0 0 2px #2a3a54;
+  border: 1px solid #778da9;
+  transform: translateY(-2px);
+}
+
+.navsearch-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navsearch-user-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #778da9;
+  object-fit: cover;
+  background: #2a3a54;
+  box-shadow: 0 0 8px #415a7744;
+}
+
+.navsearch-user-username {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #e0e1dd;
+  text-shadow: 0 0 6px #778da970;
+}
+
+.navsearch-user-meta {
+  font-size: 0.98rem;
+  color: #e0e1dd;
+}
+
+.navsearch-user-email {
+  color: #a2b1c4;
+  font-size: 0.96rem;
+  font-style: italic;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .navsearch-columns {
+    flex-direction: column;
+    align-items: center;
+    max-height: none;
+    overflow-y: visible;
+    padding: 0 16px;
+  }
+
+  .navsearch-column {
+    width: 100%;
+    max-width: 500px;
+  }
+}

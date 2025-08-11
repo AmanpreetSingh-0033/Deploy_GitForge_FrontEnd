@@ -1,0 +1,147 @@
+body {
+  background: #000000;
+  color: #e0e1dd;
+  font-family: "Fira Code", monospace;
+  margin: 0;
+}
+
+.edit-issue-main-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+}
+
+.edit-issue-content {
+  background: #0d1b2a;
+  border-radius: 18px;
+  box-shadow: 0 0 12px #ffffff40;
+  margin: 40px 0 0 0;
+  padding: 60px 40px 60px 40px;
+  width: 44rem;
+  max-width: 44rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 1px solid #415a77;
+  margin-bottom: 3rem;
+}
+
+.edit-issue-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e0e1dd;
+  margin-bottom: 32px;
+  text-shadow: 0 0 12px #778da955;
+  text-align: center;
+}
+
+.edit-issue-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.edit-issue-label {
+  font-size: 1.1rem;
+  color: #778da9;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.required {
+  color: #e63946;
+  margin-left: 3px;
+}
+
+.edit-issue-input {
+  padding: 13px 16px;
+  border-radius: 7px;
+  border: 1px solid #415a77;
+  background: #1b263b;
+  color: #e0e1dd;
+  font-size: 1.1rem;
+  font-family: inherit;
+  box-shadow: 0 0 10px #415a7755;
+  outline: none;
+  transition: all 0.2s ease;
+  margin-bottom: 7px;
+}
+
+.edit-issue-input:focus {
+  box-shadow: 0 0 18px #778da9cc;
+  border: 1.5px solid #778da9;
+}
+
+.edit-issue-error {
+  background: #3a1d24;
+  color: #e63946;
+  border: 1.5px solid #e63946;
+  border-radius: 7px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.edit-issue-success {
+  background: #1b3a2d;
+  color: #4caf50;
+  border: 1.5px solid #4caf50;
+  border-radius: 7px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.edit-issue-submit-btn {
+  padding: 13px 0;
+  background: #778da9;
+  color: #0d1b2a;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 0 10px #415a7755;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: all 0.2s ease;
+}
+
+.edit-issue-submit-btn:hover {
+  background: #e0e1dd;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px #415a7777;
+}
+
+.edit-issue-submit-btn:disabled {
+  background: #415a77;
+  color: #778da9;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .edit-issue-content {
+    padding: 18px 4vw;
+    max-width: 93vw;
+    margin: 20px 10px 0 10px;
+  }
+
+  .edit-issue-title {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+
+  .edit-issue-input {
+    font-size: 1rem;
+    padding: 12px 14px;
+  }
+
+  .edit-issue-submit-btn {
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}

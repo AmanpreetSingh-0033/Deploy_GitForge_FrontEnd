@@ -1,0 +1,179 @@
+body {
+  background: #000000;
+  color: #e0e1dd;
+  font-family: "Fira Code", monospace;
+  margin: 0;
+}
+
+.create-issue-main-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  padding: 20px 0;
+}
+
+.create-issue-content {
+  background: #0d1b2a;
+  border-radius: 18px;
+  box-shadow: 0 0 20px #ffffff40 !important;
+  margin: 40px 0 0 0;
+  padding: 60px 40px;
+  width: 44rem;
+  max-width: 44rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 1px solid #415a77;
+}
+
+.create-issue-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e0e1dd;
+  margin-bottom: 32px;
+  text-shadow: 0 0 12px #778da955;
+  text-align: center;
+}
+
+.create-issue-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.create-issue-label {
+  font-size: 1.1rem;
+  color: #b8c2d9;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.required {
+  color: #e63946;
+  margin-left: 3px;
+}
+
+.create-issue-input,
+.create-issue-textarea,
+.create-issue-select {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #415a77;
+  background: #1b263b;
+  color: #e0e1dd;
+  font-size: 1rem;
+  font-family: inherit;
+  box-shadow: 0 0 10px #415a7733;
+  outline: none;
+  transition: all 0.2s ease;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.create-issue-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.create-issue-input:focus,
+.create-issue-textarea:focus,
+.create-issue-select:focus {
+  border-color: #778da9;
+  box-shadow: 0 0 0 2px #415a77, 0 0 15px #778da955;
+}
+
+.create-issue-error {
+  background: #3a1d24;
+  color: #e63946;
+  border: 1px solid #e63946;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  font-size: 0.95rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(230, 57, 70, 0.1);
+}
+
+.create-issue-success {
+  background: #1b3a2d;
+  color: #4caf50;
+  border: 1px solid #4caf50;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  font-size: 0.95rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.1);
+}
+
+.create-issue-submit-btn {
+  padding: 14px 0;
+  background: #778da9;
+  color: #0d1b2a;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px #415a7755;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.create-issue-submit-btn:hover {
+  background: #e0e1dd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px #415a7777;
+}
+
+.create-issue-submit-btn:active {
+  transform: translateY(0);
+}
+
+.create-issue-submit-btn:disabled {
+  background: #415a77;
+  color: #778da9;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+.char-count {
+  text-align: right;
+  font-size: 0.85rem;
+  color: #b8c2d9;
+  margin-top: -15px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 700px) {
+  .create-issue-content {
+    padding: 30px 20px;
+    margin: 20px 15px 0;
+    max-width: 90%;
+  }
+
+  .create-issue-title {
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+  }
+
+  .create-issue-input,
+  .create-issue-textarea,
+  .create-issue-select {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+
+  .create-issue-submit-btn {
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}
