@@ -5,7 +5,7 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import PersonIcon from "@mui/icons-material/Person";
 import GroupIcon from "@mui/icons-material/Group";
-import "./profile.css";
+import "./Profile.css";
 import ActivityHeatMap from "./HeatMap";
 import GetAllUsers from "./GetAllUsers";
 import { useNavigate } from "react-router-dom";
