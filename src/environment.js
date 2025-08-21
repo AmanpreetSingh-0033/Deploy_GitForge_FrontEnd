@@ -1,5 +1,7 @@
 let IS_PROD = true;
 
-const server = IS_PROD ? "http://54.81.162.124:3000" : "3000";
+const server = IS_PROD
+  ? "https://gitforge-backend-deploy-render.onrender.com"
+  : "http://localhost:3000";
 
 export default server;
